@@ -8,6 +8,7 @@ import { ShareModule } from './share/share.module';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { NgZorroAntdMobileModule } from 'ng-zorro-antd-mobile';
+import { IonicModule } from '@ionic/angular';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { NgZorroAntdMobileModule } from 'ng-zorro-antd-mobile';
     FormsModule,
     HttpClientModule,
     NgZorroAntdMobileModule,
+    IonicModule.forRoot(),
   ],
   providers: [],
   bootstrap: [AppComponent]
