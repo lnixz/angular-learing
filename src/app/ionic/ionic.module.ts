@@ -1,23 +1,21 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { HomeComponent } from './component/home.component';
+import { IonicComponent } from './ionic.component';
 import { ShareModule } from '@share/share.module';
 import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
-  { path: '', component: HomeComponent },
+  { path: '', component: IonicComponent },
 ];
-
-
 
 @NgModule({
   declarations: [
-    HomeComponent,
+    IonicComponent
   ],
   imports: [
     CommonModule,
     ShareModule,
-    RouterModule.forChild(routes),
+    RouterModule.forChild(routes)
   ]
 })
-export class HomeModule { }
+export class IonicModule { }
